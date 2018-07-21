@@ -14,5 +14,5 @@ npm install
 zip -r twitterbot-lambda.zip .
 ```
 
-Then upload the twitterbot-lambda directory to your AWS lambda.
+Then upload the twitterbot-lambda zip to your AWS lambda.
 
