@@ -1,20 +1,18 @@
-# RandomNameGenerator
+# RandomNameGenerator On AWS Lambda
 
-This is a random name generator written in Haskell, available at: https://whispering-shore-20690.herokuapp.com/. This heroku instance uses the [Heroku Buildpack Stack](https://github.com/mfine/heroku-buildpack-stack.git) as the deploy script.
+This is a random name generator written in Haskell deployed to AWS Lambda.
 
-## Contributing
+You will need [Stack](https://docs.haskellstack.org/en/stable/README/#how-to-install) to build and run locally.
 
-*Contributions welcome!*
-
-You will need [Stack](https://docs.haskellstack.org/en/stable/README/#how-to-install) to build and run locally. If you want to run on Heroku, then you will need to use the [Haskell Stack Heroku buildpack](https://github.com/mfine/heroku-buildpack-stack) to deploy.
-
-To run locally: 
+## Usage
 
 ```
 stack build
-stack exec -- randomNameGenerator
+cp -r .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/randomNameGenerator/randomNameGenerator twitterbot-lambda
+cd twitterbot-lambda
+npm install 
+zip -r twitterbot-lambda .
 ```
 
-Then visit `localhost:3000`
+Then upload the twitterbot-lambda directory to your AWS lambda.
 
-To contribute, fork, make your changes, and open up a PR.
