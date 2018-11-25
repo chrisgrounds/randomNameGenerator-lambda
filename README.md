@@ -10,5 +10,5 @@ You will need [Stack](https://docs.haskellstack.org/en/stable/README/#how-to-ins
 make build
 ```
 
-Then upload `twitterbot-lambda/twitterbot.zip` to your AWS lambda.
+Then upload `twitterbot-lambda/twitterbot-lambda.zip` to your AWS lambda.
 
