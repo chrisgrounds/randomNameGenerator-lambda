@@ -6,3 +6,5 @@ build:
 	cd twitterbot-lambda
 	npm install
 	zip -r twitterbot-lambda.zip .
+	rm twitterbot-lambda/randomNameGenerator
+	rm twitterbot-lambda/twitterbot.zip
