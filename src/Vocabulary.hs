@@ -1,6 +1,7 @@
 module Vocabulary where
 
-adjs = ["admiring",
+adjs = [
+    "admiring",
     "adoring",
     "agitated",
     "angry",
@@ -56,9 +57,11 @@ adjs = ["admiring",
     "suspicious",
     "tender",
     "thirsty",
-    "trusting"]
+    "trusting"
+    ]
 
-nouns = ["lake",
+nouns = [
+    "lake",
     "mountain",
     "plateau",
     "fjord",
@@ -72,5 +75,6 @@ nouns = ["lake",
     "river",
     "sea",
     "cloud",
-    "fog"]
+    "fog"
+    ]
 
