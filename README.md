@@ -7,12 +7,8 @@ You will need [Stack](https://docs.haskellstack.org/en/stable/README/#how-to-ins
 ## Usage
 
 ```
-stack build
-cp -r .stack-work/dist/x86_64-linux-nopie/Cabal-2.0.1.0/build/randomNameGenerator/randomNameGenerator twitterbot-lambda
-cd twitterbot-lambda
-npm install 
-zip -r twitterbot-lambda.zip .
+make build
 ```
 
-Then upload the twitterbot-lambda zip to your AWS lambda.
+Then upload `twitterbot-lambda/twitterbot.zip` to your AWS lambda.
 
